@@ -1,9 +1,14 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, StatusBar } from 'react-native';
+import { Container } from './styles';
+import Header from "../../components/Header";
 
 const Main = () => {
   return (
-    <Text>Test</Text>
+    <Container>
+      <Header />
+      <StatusBar  barStyle="light-content" backgroundColor="#8B10AE"/>
+    </Container>
   );
 }
 
